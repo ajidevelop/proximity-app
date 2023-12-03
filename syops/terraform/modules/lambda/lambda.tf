@@ -1,7 +1,7 @@
 data "archive_file" "zip" {
   type = "zip"
-  source_dir = var.path
-  output_path = "${var.path}/main.zip"
+  source_dir = var.source_dir
+  output_path = "main.zip"
 }
 
 resource "aws_lambda_function" "search_nearby" {
