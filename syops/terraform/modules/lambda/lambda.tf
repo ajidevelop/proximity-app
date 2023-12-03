@@ -1,6 +1,6 @@
 data "archive_file" "zip" {
   type = "zip"
-  source_dir = "${var.path}/src"
+  source_dir = var.path
   output_path = "${var.path}/main.zip"
 }
 
